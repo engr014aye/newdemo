@@ -19,7 +19,7 @@ class ListFragment : Fragment() {
         val view =   inflater.inflate(R.layout.fragment_list, container, false)
 
         view.findViewById<FloatingActionButton>(R.id.floatingActionButton).setOnClickListener {
-            findNavController().navigate(R.id.fragmentContainerView)
+            findNavController().navigate(R.id.action_listFragment_to_addFragment)
         }
 
         return view
